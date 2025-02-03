@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Form, ListGroup } from "react-bootstrap";
-import gameWords from "../data/gameWords.json";
+import gameWords1 from "../data/gameWords1.json";
+import gameWords2 from "../data/gameWords2.json";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,11 @@ import {
   faPlay,
   faAdd,
 } from "@fortawesome/free-solid-svg-icons";
+
+const datasets = {
+  "Việt Nam": gameWords1,
+  "Công nghệ": gameWords2,
+};
 
 const prizes = [
   { label: "100", value: 100, color: "#FF5733" },
@@ -28,9 +34,11 @@ const prizes = [
 ];
 
 const WordPuzzle = () => {
-  const wordIndex = Math.floor(Math.random() * gameWords.length);
-  const [word, setWord] = useState(gameWords[wordIndex].word);
-  const [clue, setClue] = useState(gameWords[wordIndex].clue);
+  const [selectedDataset, setSelectedDataset] = useState("Việt Nam");
+  const [wordData, setWordData] = useState(datasets[selectedDataset]);
+  const wordIndex = Math.floor(Math.random() * wordData.length);
+  const [word, setWord] = useState(wordData[wordIndex].word);
+  const [clue, setClue] = useState(wordData[wordIndex].clue);
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [gameOver, setGameOver] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -63,11 +71,25 @@ const WordPuzzle = () => {
   };
 
   useEffect(() => {
+    setWordData(datasets[selectedDataset]);
+    const randomIndex = Math.floor(
+      Math.random() * datasets[selectedDataset].length
+    );
+    setWord(datasets[selectedDataset][randomIndex].word);
+    setClue(datasets[selectedDataset][randomIndex].clue);
+  }, [selectedDataset]);
+
+  useEffect(() => {
     if (!getMaskedWord().includes("_")) {
       setGameOver(true);
       setMessage("Chúc mừng! Từ đã được đoán xong!");
     } // eslint-disable-next-line
   }, [guessedLetters]);
+
+  const handleDatasetChange = (event) => {
+    setSelectedDataset(event.target.value);
+    restartGame();
+  };
 
   const startGame = () => {
     if (players.length === 0) {
@@ -150,7 +172,7 @@ const WordPuzzle = () => {
       return;
     }
 
-    const randomWord = gameWords[Math.floor(Math.random() * gameWords.length)];
+    const randomWord = wordData[Math.floor(Math.random() * wordData.length)];
     setWord(randomWord.word);
     setClue(randomWord.clue);
     setGuessedLetters([]);
@@ -233,6 +255,24 @@ const WordPuzzle = () => {
   return (
     <>
       <h1 className="text-center mb-4">Ô Chữ</h1>
+      {/* Dataset Selection Dropdown */}
+      <Form.Group
+        controlId="datasetSelect"
+        className="mb-3 mx-auto col-md-6 text-center"
+      >
+        <Form.Label>Chọn chủ đề</Form.Label>
+        <Form.Select
+          size="lg"
+          value={selectedDataset}
+          onChange={handleDatasetChange}
+        >
+          {Object.keys(datasets).map((key) => (
+            <option key={key} value={key}>
+              {key}
+            </option>
+          ))}
+        </Form.Select>
+      </Form.Group>
       {gameOver ? (
         <div className="text-center">
           <h3 className="text-center display-6">{getMaskedWord()}</h3>
