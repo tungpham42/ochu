@@ -4,10 +4,6 @@
     "clue": "Người giàu nhất thế giới năm 2024."
   },
   {
-    "word": "VIETNAM",
-    "clue": "Quốc gia hình chữ S ở Đông Nam Á."
-  },
-  {
     "word": "PYTHON",
     "clue": "Ngôn ngữ lập trình phổ biến được dùng trong AI."
   },
@@ -46,5 +42,221 @@
   {
     "word": "BLOCKCHAIN",
     "clue": "Công nghệ đứng sau Bitcoin và tiền điện tử."
+  },
+  {
+    "word": "ANDROID",
+    "clue": "Hệ điều hành di động phổ biến của Google."
+  },
+  {
+    "word": "LINUX",
+    "clue": "Hệ điều hành mã nguồn mở được sử dụng rộng rãi."
+  },
+  {
+    "word": "CHATGPT",
+    "clue": "Mô hình AI trò chuyện do OpenAI phát triển."
+  },
+  {
+    "word": "TIKTOK",
+    "clue": "Ứng dụng video ngắn phổ biến trên toàn cầu."
+  },
+  {
+    "word": "NVIDIA",
+    "clue": "Công ty nổi tiếng với card đồ họa GPU."
+  },
+  {
+    "word": "INTEL",
+    "clue": "Công ty sản xuất bộ vi xử lý nổi tiếng thế giới."
+  },
+  {
+    "word": "CLOUD",
+    "clue": "Dịch vụ lưu trữ dữ liệu trực tuyến."
+  },
+  {
+    "word": "CYBERSECURITY",
+    "clue": "Lĩnh vực bảo vệ hệ thống máy tính khỏi tấn công mạng."
+  },
+  {
+    "word": "BIGDATA",
+    "clue": "Khối lượng dữ liệu lớn được phân tích để đưa ra quyết định."
+  },
+  {
+    "word": "QUANTUM",
+    "clue": "Máy tính dựa trên cơ học lượng tử."
+  },
+  {
+    "word": "ROBOTICS",
+    "clue": "Ngành nghiên cứu và phát triển robot."
+  },
+  {
+    "word": "VIRTUALREALITY",
+    "clue": "Công nghệ mô phỏng không gian ảo cho người dùng."
+  },
+  {
+    "word": "AUGMENTEDREALITY",
+    "clue": "Công nghệ thực tế ảo tăng cường."
+  },
+  {
+    "word": "MACHINELEARNING",
+    "clue": "Một nhánh của AI giúp máy móc học từ dữ liệu."
+  },
+  {
+    "word": "DEEPLEARNING",
+    "clue": "Mô hình học sâu dựa trên mạng nơ-ron nhân tạo."
+  },
+  {
+    "word": "SMARTPHONE",
+    "clue": "Thiết bị di động thông minh phổ biến ngày nay."
+  },
+  {
+    "word": "TABLET",
+    "clue": "Thiết bị di động có màn hình lớn hơn điện thoại."
+  },
+  {
+    "word": "LAPTOP",
+    "clue": "Máy tính xách tay tiện lợi."
+  },
+  {
+    "word": "HARDWARE",
+    "clue": "Các bộ phận vật lý của một hệ thống máy tính."
+  },
+  {
+    "word": "SOFTWARE",
+    "clue": "Các chương trình và ứng dụng chạy trên máy tính."
+  },
+  {
+    "word": "FIREWALL",
+    "clue": "Hệ thống bảo mật ngăn chặn truy cập trái phép."
+  },
+  {
+    "word": "ENCRYPTION",
+    "clue": "Quá trình mã hóa dữ liệu để bảo vệ thông tin."
+  },
+  {
+    "word": "VIRUS",
+    "clue": "Phần mềm độc hại có thể lây nhiễm máy tính."
+  },
+  {
+    "word": "MALWARE",
+    "clue": "Phần mềm độc hại bao gồm virus, trojan, spyware."
+  },
+  {
+    "word": "TROJAN",
+    "clue": "Một loại phần mềm độc hại giả dạng phần mềm hợp pháp."
+  },
+  {
+    "word": "PHISHING",
+    "clue": "Hình thức lừa đảo để lấy thông tin cá nhân."
+  },
+  {
+    "word": "BIOMETRICS",
+    "clue": "Công nghệ nhận diện dựa trên vân tay, khuôn mặt."
+  },
+  {
+    "word": "DRONE",
+    "clue": "Thiết bị bay không người lái điều khiển từ xa."
+  },
+  {
+    "word": "SATELLITE",
+    "clue": "Thiết bị quay quanh Trái Đất phục vụ viễn thông."
+  },
+  {
+    "word": "SEMICONDUCTOR",
+    "clue": "Vật liệu quan trọng trong sản xuất vi mạch."
+  },
+  {
+    "word": "MICROCHIP",
+    "clue": "Linh kiện điện tử nhỏ nhưng mạnh mẽ."
+  },
+  {
+    "word": "CIRCUIT",
+    "clue": "Mạch điện tử trong thiết bị công nghệ."
+  },
+  {
+    "word": "SERVER",
+    "clue": "Máy chủ cung cấp dữ liệu và dịch vụ qua mạng."
+  },
+  {
+    "word": "DATABASE",
+    "clue": "Kho lưu trữ dữ liệu có tổ chức."
+  },
+  {
+    "word": "SQL",
+    "clue": "Ngôn ngữ dùng để quản lý cơ sở dữ liệu quan hệ."
+  },
+  {
+    "word": "NOSQL",
+    "clue": "Hệ quản trị cơ sở dữ liệu phi quan hệ."
+  },
+  {
+    "word": "FRONTEND",
+    "clue": "Phần giao diện người dùng của một ứng dụng web."
+  },
+  {
+    "word": "BACKEND",
+    "clue": "Phần xử lý logic và dữ liệu của một ứng dụng."
+  },
+  {
+    "word": "API",
+    "clue": "Giao diện lập trình ứng dụng giúp kết nối phần mềm."
+  },
+  {
+    "word": "REACT",
+    "clue": "Thư viện JavaScript phổ biến cho giao diện người dùng."
+  },
+  {
+    "word": "VUE",
+    "clue": "Framework JavaScript nhẹ và dễ sử dụng."
+  },
+  {
+    "word": "ANGULAR",
+    "clue": "Framework JavaScript mạnh mẽ do Google phát triển."
+  },
+  {
+    "word": "GITHUB",
+    "clue": "Nền tảng lưu trữ và quản lý mã nguồn phổ biến."
+  },
+  {
+    "word": "DOCKER",
+    "clue": "Công nghệ ảo hóa ứng dụng bằng container."
+  },
+  {
+    "word": "KUBERNETES",
+    "clue": "Công cụ quản lý container trên quy mô lớn."
+  },
+  {
+    "word": "AIASSISTANT",
+    "clue": "Trợ lý ảo sử dụng trí tuệ nhân tạo như Siri, Alexa."
+  },
+  {
+    "word": "ELECTRONICS",
+    "clue": "Ngành nghiên cứu và phát triển các thiết bị điện tử."
+  },
+  {
+    "word": "QUANTUMCOMPUTING",
+    "clue": "Công nghệ máy tính dựa trên qubit."
+  },
+  {
+    "word": "NANOTECHNOLOGY",
+    "clue": "Công nghệ thao tác vật chất ở cấp độ nano."
+  },
+  {
+    "word": "WEB3",
+    "clue": "Thế hệ tiếp theo của internet phi tập trung."
+  },
+  {
+    "word": "NFT",
+    "clue": "Tài sản số duy nhất dựa trên blockchain."
+  },
+  {
+    "word": "CRYPTO",
+    "clue": "Tiền điện tử và công nghệ blockchain."
+  },
+  {
+    "word": "ETHEREUM",
+    "clue": "Nền tảng blockchain phổ biến sau Bitcoin."
+  },
+  {
+    "word": "METAVERSE",
+    "clue": "Vũ trụ ảo nơi con người có thể tương tác số hóa."
   }
 ]
