@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Form, ListGroup } from "react-bootstrap";
 import gameWords1 from "../data/gameWords1.json";
 import gameWords2 from "../data/gameWords2.json";
+import gameWords3 from "../data/gameWords3.json";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +17,7 @@ import {
 const datasets = {
   "Việt Nam": gameWords1,
   "Công nghệ": gameWords2,
+  "Chương trình TECD": gameWords3,
 };
 
 const prizes = [
