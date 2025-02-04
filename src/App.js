@@ -12,6 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<WordPuzzle />} />
           <Route path="/kambria" element={<KambriaWordPuzzle />} />
+          <Route path="/quantri" element={<AdminPanel />} />
           <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </Container>
