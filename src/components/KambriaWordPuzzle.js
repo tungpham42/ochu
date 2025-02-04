@@ -69,6 +69,8 @@ const KambriaWordPuzzle = () => {
       setWord(words[wordIndex].word);
       setClue(words[wordIndex].clue);
       setWordData(words); // Set the wordData state
+      setGameOver(false);
+      setMessage("");
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -166,6 +168,10 @@ const KambriaWordPuzzle = () => {
       setError(
         "Vui lòng thêm ít nhất một người chơi trước khi khởi động lại trò chơi!"
       );
+      return;
+    }
+    if (wordData.length === 0) {
+      setError("Không có ô chữ!");
       return;
     }
     const randomIndex = Math.floor(Math.random() * wordData.length);
