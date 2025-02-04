@@ -1,14 +1,194 @@
 [
   {
-    "word": "TECHPOWEREDELDERLYCAREDAO",
-    "clue": "TECD là viết tắt của từ gì."
+    "word": "CINEMA",
+    "clue": "Nơi bạn có thể xem phim trên màn ảnh rộng."
   },
   {
-    "word": "SENIORS",
-    "clue": "Các Bác Cao niên tham gia TECD."
+    "word": "KARAOKE",
+    "clue": "Hoạt động giải trí phổ biến, nơi bạn có thể hát theo nhạc nền."
   },
   {
-    "word": "SENIORBUDDY",
-    "clue": "Các bạn trẻ tham gia TECD."
+    "word": "BOARDGAME",
+    "clue": "Trò chơi giải trí có bàn cờ, thường chơi theo nhóm."
+  },
+  {
+    "word": "MAGICSHOW",
+    "clue": "Biểu diễn với những màn ảo thuật kỳ diệu."
+  },
+  {
+    "word": "CONCERT",
+    "clue": "Sự kiện âm nhạc trực tiếp với các ca sĩ và ban nhạc biểu diễn."
+  },
+  {
+    "word": "CIRCUS",
+    "clue": "Nơi có các tiết mục nhào lộn, xiếc thú và biểu diễn vui nhộn."
+  },
+  {
+    "word": "THEATER",
+    "clue": "Nơi diễn ra các vở kịch hoặc nhạc kịch trên sân khấu."
+  },
+  {
+    "word": "ESCAPEROOM",
+    "clue": "Trò chơi trí tuệ, nơi bạn phải giải đố để thoát ra khỏi phòng."
+  },
+  {
+    "word": "VIDEOGAME",
+    "clue": "Hình thức giải trí điện tử với nhiều thể loại khác nhau."
+  },
+  {
+    "word": "MUSEUM",
+    "clue": "Nơi trưng bày các tác phẩm nghệ thuật hoặc hiện vật lịch sử."
+  },
+  {
+    "word": "AMUSEMENTPARK",
+    "clue": "Công viên giải trí với nhiều trò chơi và hoạt động thú vị."
+  },
+  {
+    "word": "ZOO",
+    "clue": "Nơi bạn có thể xem và tìm hiểu về các loài động vật."
+  },
+  {
+    "word": "AQUARIUM",
+    "clue": "Nơi trưng bày các loài sinh vật biển dưới nước."
+  },
+  {
+    "word": "FESTIVAL",
+    "clue": "Sự kiện văn hóa hoặc giải trí có nhiều hoạt động đặc sắc."
+  },
+  {
+    "word": "BALLET",
+    "clue": "Hình thức múa nghệ thuật trên sân khấu với những động tác uyển chuyển."
+  },
+  {
+    "word": "ORCHESTRA",
+    "clue": "Nhóm nhạc công chơi nhạc cổ điển cùng nhau."
+  },
+  {
+    "word": "STANDUPCOMEDY",
+    "clue": "Hình thức biểu diễn hài hước, nơi diễn viên kể chuyện cười."
+  },
+  {
+    "word": "PAINTING",
+    "clue": "Hoạt động nghệ thuật sử dụng màu sắc để vẽ tranh."
+  },
+  {
+    "word": "DRAWING",
+    "clue": "Hoạt động sáng tạo sử dụng bút hoặc bút chì để phác họa hình ảnh."
+  },
+  {
+    "word": "DANCE",
+    "clue": "Hình thức nghệ thuật kết hợp giữa âm nhạc và chuyển động cơ thể."
+  },
+  {
+    "word": "PUZZLE",
+    "clue": "Trò chơi trí tuệ yêu cầu ghép các mảnh để tạo hình hoàn chỉnh."
+  },
+  {
+    "word": "ROLLERCOASTER",
+    "clue": "Trò chơi tàu lượn siêu tốc đầy phấn khích."
+  },
+  {
+    "word": "BOWLING",
+    "clue": "Trò chơi ném bóng để hạ gục các chai gỗ ở cuối làn đường."
+  },
+  {
+    "word": "MINIGOLF",
+    "clue": "Phiên bản thu nhỏ của môn golf, thường chơi để giải trí."
+  },
+  {
+    "word": "ICESKATING",
+    "clue": "Hoạt động lướt trên băng bằng giày trượt chuyên dụng."
+  },
+  {
+    "word": "GOKART",
+    "clue": "Đua xe nhỏ trên đường đua chuyên dụng."
+  },
+  {
+    "word": "ARCHERY",
+    "clue": "Môn bắn cung nhắm vào mục tiêu."
+  },
+  {
+    "word": "HORSEBACKRIDING",
+    "clue": "Cưỡi ngựa để giải trí hoặc thể thao."
+  },
+  {
+    "word": "CAMPING",
+    "clue": "Hoạt động ngoài trời, dựng lều và trải nghiệm thiên nhiên."
+  },
+  {
+    "word": "HIKING",
+    "clue": "Đi bộ đường dài để tận hưởng phong cảnh thiên nhiên."
+  },
+  {
+    "word": "FISHING",
+    "clue": "Hoạt động câu cá để thư giãn hoặc giải trí."
+  },
+  {
+    "word": "PHOTOGRAPHY",
+    "clue": "Hoạt động chụp ảnh để ghi lại khoảnh khắc đẹp."
+  },
+  {
+    "word": "GAMBLING",
+    "clue": "Chơi trò cá cược với tiền bạc hoặc tài sản."
+  },
+  {
+    "word": "ESCAPEGAME",
+    "clue": "Trò chơi giải đố với mục tiêu tìm đường thoát khỏi một tình huống."
+  },
+  {
+    "word": "BINGO",
+    "clue": "Trò chơi may mắn với các con số và bảng số."
+  },
+  {
+    "word": "LASERTAG",
+    "clue": "Trò chơi bắn súng laser trong môi trường giả lập."
+  },
+  {
+    "word": "PAINTBALL",
+    "clue": "Trò chơi chiến thuật sử dụng súng bắn đạn sơn."
+  },
+  {
+    "word": "TRAMPOLINE",
+    "clue": "Hoạt động nhảy trên một tấm bạt lò xo đàn hồi."
+  },
+  {
+    "word": "SURFING",
+    "clue": "Môn thể thao lướt sóng trên biển."
+  },
+  {
+    "word": "SNORKELING",
+    "clue": "Lặn nông để khám phá thế giới dưới nước."
+  },
+  {
+    "word": "SCUBADIVING",
+    "clue": "Lặn biển với bình dưỡng khí để khám phá đáy đại dương."
+  },
+  {
+    "word": "KITEFLYING",
+    "clue": "Hoạt động thả diều trong gió."
+  },
+  {
+    "word": "TALENTSHOW",
+    "clue": "Cuộc thi tìm kiếm tài năng trong nhiều lĩnh vực."
+  },
+  {
+    "word": "COSTUME PARTY",
+    "clue": "Bữa tiệc nơi mọi người hóa trang thành các nhân vật khác nhau."
+  },
+  {
+    "word": "HAUNTEDHOUSE",
+    "clue": "Ngôi nhà ma dành cho những ai thích cảm giác mạnh."
+  },
+  {
+    "word": "FIREWORKS",
+    "clue": "Màn trình diễn pháo hoa rực rỡ trên bầu trời."
+  },
+  {
+    "word": "STARGAZING",
+    "clue": "Hoạt động ngắm sao trên bầu trời đêm."
+  },
+  {
+    "word": "PUPPETSHOW",
+    "clue": "Biểu diễn rối nghệ thuật với nhiều câu chuyện hấp dẫn."
   }
 ]

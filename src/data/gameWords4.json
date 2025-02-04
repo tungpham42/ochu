@@ -1,0 +1,194 @@
+[
+  {
+    "word": "FOOTBALL",
+    "clue": "Môn thể thao vua."
+  },
+  {
+    "word": "BASKETBALL",
+    "clue": "Môn thể thao với bóng cam và rổ."
+  },
+  {
+    "word": "TENNIS",
+    "clue": "Môn thể thao với vợt và lưới."
+  },
+  {
+    "word": "BADMINTON",
+    "clue": "Môn thể thao dùng vợt và cầu."
+  },
+  {
+    "word": "SWIMMING",
+    "clue": "Môn thể thao dưới nước."
+  },
+  {
+    "word": "VOLLEYBALL",
+    "clue": "Môn thể thao với lưới và bóng chuyền."
+  },
+  {
+    "word": "PINGPONG",
+    "clue": "Tennis phiên bản nhỏ trên bàn."
+  },
+  {
+    "word": "CYCLING",
+    "clue": "Môn thể thao với xe đạp."
+  },
+  {
+    "word": "RUNNING",
+    "clue": "Môn thể thao sử dụng tốc độ của đôi chân."
+  },
+  {
+    "word": "MARATHON",
+    "clue": "Cuộc đua chạy đường dài."
+  },
+  {
+    "word": "GOLF",
+    "clue": "Môn thể thao đánh bóng vào lỗ."
+  },
+  {
+    "word": "BOXING",
+    "clue": "Môn thể thao đối kháng bằng nắm đấm."
+  },
+  {
+    "word": "WRESTLING",
+    "clue": "Môn thể thao vật lộn trên sàn đấu."
+  },
+  {
+    "word": "JUDO",
+    "clue": "Môn võ thuật có nguồn gốc từ Nhật Bản."
+  },
+  {
+    "word": "KARATE",
+    "clue": "Môn võ thuật nổi tiếng từ Nhật Bản."
+  },
+  {
+    "word": "TAEKWONDO",
+    "clue": "Môn võ thuật truyền thống của Hàn Quốc."
+  },
+  {
+    "word": "FENCING",
+    "clue": "Môn thể thao đấu kiếm."
+  },
+  {
+    "word": "ARCHERY",
+    "clue": "Môn thể thao bắn cung."
+  },
+  {
+    "word": "WEIGHTLIFTING",
+    "clue": "Môn thể thao nâng tạ."
+  },
+  {
+    "word": "SKATEBOARDING",
+    "clue": "Môn thể thao dùng ván trượt."
+  },
+  {
+    "word": "SURFING",
+    "clue": "Môn thể thao lướt sóng trên biển."
+  },
+  {
+    "word": "ROWING",
+    "clue": "Môn thể thao chèo thuyền."
+  },
+  {
+    "word": "CANOEING",
+    "clue": "Môn thể thao dùng xuồng trên nước."
+  },
+  {
+    "word": "KAYAKING",
+    "clue": "Môn thể thao dùng thuyền kayak."
+  },
+  {
+    "word": "DIVING",
+    "clue": "Môn thể thao nhảy xuống nước từ trên cao."
+  },
+  {
+    "word": "SKIING",
+    "clue": "Môn thể thao trượt tuyết."
+  },
+  {
+    "word": "SNOWBOARDING",
+    "clue": "Môn thể thao trượt tuyết bằng ván."
+  },
+  {
+    "word": "ICEHOCKEY",
+    "clue": "Khúc côn cầu trên băng."
+  },
+  {
+    "word": "FIELDHOCKEY",
+    "clue": "Khúc côn cầu trên sân cỏ."
+  },
+  {
+    "word": "RUGBY",
+    "clue": "Môn thể thao tương tự bóng bầu dục."
+  },
+  {
+    "word": "AMERICANFOOTBALL",
+    "clue": "Bóng bầu dục kiểu Mỹ."
+  },
+  {
+    "word": "BASEBALL",
+    "clue": "Môn thể thao với gậy và bóng chày."
+  },
+  {
+    "word": "SOFTBALL",
+    "clue": "Môn thể thao tương tự bóng chày nhưng dùng bóng mềm."
+  },
+  {
+    "word": "CRICKET",
+    "clue": "Môn thể thao phổ biến ở Anh và Ấn Độ."
+  },
+  {
+    "word": "HANDBALL",
+    "clue": "Môn thể thao dùng tay ném bóng vào khung thành."
+  },
+  {
+    "word": "WATERPOLO",
+    "clue": "Môn bóng nước thi đấu trong hồ bơi."
+  },
+  {
+    "word": "MOTORSPORT",
+    "clue": "Thể thao tốc độ với xe đua."
+  },
+  {
+    "word": "FORMULA1",
+    "clue": "Giải đua xe danh giá nhất thế giới."
+  },
+  {
+    "word": "MOUNTAINEERING",
+    "clue": "Môn thể thao leo núi."
+  },
+  {
+    "word": "BOBSLEIGH",
+    "clue": "Môn thể thao đua xe trượt tuyết."
+  },
+  {
+    "word": "HORSERACING",
+    "clue": "Môn thể thao đua ngựa."
+  },
+  {
+    "word": "EQUESTRIAN",
+    "clue": "Môn thể thao cưỡi ngựa vượt chướng ngại vật."
+  },
+  {
+    "word": "GYMNASTICS",
+    "clue": "Môn thể thao nhào lộn."
+  },
+  {
+    "word": "TRIATHLON",
+    "clue": "Môn thể thao kết hợp bơi, đạp xe, chạy bộ."
+  },
+  {
+    "word": "PARKOUR",
+    "clue": "Môn thể thao vượt chướng ngại vật tự do."
+  },
+  {
+    "word": "SUMO",
+    "clue": "Môn đấu vật truyền thống Nhật Bản."
+  },
+  {
+    "word": "DARTS",
+    "clue": "Môn thể thao ném phi tiêu."
+  },
+  {
+    "word": "BILLIARDS",
+    "clue": "Môn thể thao chơi bi-a trên bàn có lỗ."
+  }
+]

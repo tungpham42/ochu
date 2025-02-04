@@ -3,6 +3,8 @@ import { Button, Row, Col, Form, ListGroup } from "react-bootstrap";
 import gameWords1 from "../data/gameWords1.json";
 import gameWords2 from "../data/gameWords2.json";
 import gameWords3 from "../data/gameWords3.json";
+import gameWords4 from "../data/gameWords4.json";
+import gameWords5 from "../data/gameWords5.json";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +19,9 @@ import {
 const datasets = {
   "Việt Nam": gameWords1,
   "Công nghệ": gameWords2,
-  "Chương trình TECD": gameWords3,
+  "Giải trí": gameWords3,
+  "Thể thao": gameWords4,
+  "Chương trình TECD": gameWords5,
 };
 
 const prizes = [
