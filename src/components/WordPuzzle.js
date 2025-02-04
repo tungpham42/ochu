@@ -24,7 +24,7 @@ const datasets = {
   "Giải trí": gameWords3,
   "Thể thao": gameWords4,
   "Ẩm thực": gameWords5,
-  "Công ty SYMBOTIC": gameWords6,
+  "Công ty Symbotic": gameWords6,
   "Chương trình TECD": gameWords7,
 };
 
