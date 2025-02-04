@@ -1,14 +1,194 @@
 [
   {
-    "word": "TECHPOWEREDELDERLYCAREDAO",
-    "clue": "TECD là viết tắt của từ gì."
+    "word": "RICKCOHEN",
+    "clue": "Ai là người sáng lập một công ty đang cách mạng hóa ngành kho bãi và tự động hóa?"
   },
   {
-    "word": "SENIORS",
-    "clue": "Các Bác Cao niên tham gia TECD."
+    "word": "SYMBOTIC",
+    "clue": "Công ty nào đang áp dụng các công nghệ mới nhất để cải thiện các kho bãi và phân phối?"
   },
   {
-    "word": "SENIORBUDDY",
-    "clue": "Các bạn trẻ tham gia TECD."
+    "word": "ROBOTICS",
+    "clue": "Công nghệ nào giúp các công ty giảm thiểu nhân lực và tăng cường tự động hóa?"
+  },
+  {
+    "word": "WALMART",
+    "clue": "Tập đoàn nào sử dụng các giải pháp tự động hóa để cải thiện hoạt động kho bãi?"
+  },
+  {
+    "word": "AUTOMATION",
+    "clue": "Ngành nào đang được cải tiến mạnh mẽ nhờ vào sự phát triển của công nghệ tự động?"
+  },
+  {
+    "word": "WAREHOUSE",
+    "clue": "Các cơ sở vật chất nào đang được tự động hóa để nâng cao hiệu suất làm việc?"
+  },
+  {
+    "word": "LOGISTICS",
+    "clue": "Lĩnh vực nào được cải thiện khi áp dụng các công nghệ tự động hóa kho bãi?"
+  },
+  {
+    "word": "ROBOT",
+    "clue": "Loại thiết bị tự động nào đang được sử dụng để làm việc thay thế con người?"
+  },
+  {
+    "word": "ARTIFICIALINTELLIGENCE",
+    "clue": "Công nghệ nào giúp hệ thống tự động hóa trở nên thông minh hơn và có khả năng học hỏi?"
+  },
+  {
+    "word": "WAREHOUSEMANAGEMENT",
+    "clue": "Giải pháp nào được phát triển để giúp quản lý kho bãi hiệu quả hơn?"
+  },
+  {
+    "word": "EFFICIENCY",
+    "clue": "Một trong những mục tiêu quan trọng của tự động hóa trong kho bãi là gì?"
+  },
+  {
+    "word": "ROBOTICSAUTOMATION",
+    "clue": "Loại công nghệ nào được áp dụng để tự động hóa quy trình kho bãi?"
+  },
+  {
+    "word": "SYSTEMINTEGRATION",
+    "clue": "Loại giải pháp nào giúp kết nối và đồng bộ các hệ thống trong kho bãi?"
+  },
+  {
+    "word": "DISTRIBUTIONCENTER",
+    "clue": "Loại trung tâm nào đang được các công ty sử dụng để tối ưu hóa việc phân phối hàng hóa?"
+  },
+  {
+    "word": "SMARTWAREHOUSE",
+    "clue": "Kho bãi thông minh là gì và làm thế nào để cải thiện hoạt động kho bãi?"
+  },
+  {
+    "word": "SUPPLYCHAIN",
+    "clue": "Giải pháp nào giúp tối ưu hóa quá trình vận chuyển và phân phối hàng hóa?"
+  },
+  {
+    "word": "AIPOWERED",
+    "clue": "Công nghệ nào đang giúp các hệ thống tự động hóa trở nên linh hoạt và hiệu quả hơn?"
+  },
+  {
+    "word": "SUSTAINABILITY",
+    "clue": "Một trong những mục tiêu quan trọng của ngành logistics hiện nay là gì?"
+  },
+  {
+    "word": "MACHINELEARNING",
+    "clue": "Loại công nghệ nào giúp máy móc học hỏi từ kinh nghiệm và cải thiện hiệu suất làm việc?"
+  },
+  {
+    "word": "SAFETY",
+    "clue": "Yếu tố nào rất quan trọng để đảm bảo rằng môi trường kho bãi hoạt động an toàn?"
+  },
+  {
+    "word": "INVENTORYMANAGEMENT",
+    "clue": "Công nghệ nào giúp việc quản lý hàng hóa trong kho trở nên chính xác hơn?"
+  },
+  {
+    "word": "AUTOMATIONTECHNOLOGY",
+    "clue": "Loại công nghệ nào được sử dụng để tự động hóa các công đoạn trong trung tâm phân phối?"
+  },
+  {
+    "word": "ORDERFULFILLMENT",
+    "clue": "Quy trình nào giúp đảm bảo rằng đơn hàng được xử lý nhanh chóng và chính xác?"
+  },
+  {
+    "word": "ROBOTFLEET",
+    "clue": "Nhóm thiết bị tự động nào được sử dụng để thực hiện công việc trong các trung tâm phân phối?"
+  },
+  {
+    "word": "CLOUDBASED",
+    "clue": "Loại nền tảng nào đang được sử dụng để quản lý và điều phối hoạt động của robot?"
+  },
+  {
+    "word": "COLLABORATION",
+    "clue": "Các công ty nào đang hợp tác để phát triển giải pháp tự động hóa cho ngành công nghiệp này?"
+  },
+  {
+    "word": "MACHINEVISION",
+    "clue": "Công nghệ nào giúp robot nhận diện và xử lý vật thể trong kho?"
+  },
+  {
+    "word": "CUSTOMIZEDSOLUTIONS",
+    "clue": "Công ty nào cung cấp giải pháp tự động hóa được điều chỉnh theo nhu cầu riêng biệt của khách hàng?"
+  },
+  {
+    "word": "ENERGYEFFICIENCY",
+    "clue": "Một trong những mục tiêu của công nghệ tự động hóa là gì để giảm thiểu chi phí năng lượng?"
+  },
+  {
+    "word": "ROBOTICARMS",
+    "clue": "Loại thiết bị nào giúp robot di chuyển và xử lý hàng hóa trong kho?"
+  },
+  {
+    "word": "SCALABILITY",
+    "clue": "Giải pháp tự động hóa cần phải có tính chất nào để dễ dàng mở rộng trong tương lai?"
+  },
+  {
+    "word": "AIALGORITHMS",
+    "clue": "Loại thuật toán nào giúp robot ra quyết định tự động trong môi trường kho bãi?"
+  },
+  {
+    "word": "COSTREDUCTION",
+    "clue": "Giải pháp tự động hóa có thể giúp giảm thiểu chi phí như thế nào trong quá trình vận hành?"
+  },
+  {
+    "word": "REALTIMETRACKING",
+    "clue": "Công nghệ nào giúp theo dõi chính xác tình trạng và vị trí của hàng hóa trong kho?"
+  },
+  {
+    "word": "WAREHOUSEROBOTICS",
+    "clue": "Symbotic chuyên cung cấp các giải pháp tự động hóa cho kho bãi sử dụng loại công nghệ nào?"
+  },
+  {
+    "word": "OPTIMIZATION",
+    "clue": "Giải pháp tự động hóa giúp tối ưu hóa những quy trình nào trong kho bãi?"
+  },
+  {
+    "word": "PREDICTIVEANALYTICS",
+    "clue": "Công cụ nào giúp dự đoán nhu cầu và tối ưu hóa các quyết định quản lý kho bãi?"
+  },
+  {
+    "word": "DIGITALTRANSFORMATION",
+    "clue": "Các công ty hiện nay đang hiện đại hóa kho bãi bằng công nghệ gì?"
+  },
+  {
+    "word": "INVENTORYACCURACY",
+    "clue": "Công nghệ tự động hóa giúp nâng cao độ chính xác trong việc quản lý gì?"
+  },
+  {
+    "word": "SUPPLYCHAINAUTOMATION",
+    "clue": "Giải pháp tự động hóa chuỗi cung ứng mang lại lợi ích gì cho các công ty?"
+  },
+  {
+    "word": "BUSINESSSCALABILITY",
+    "clue": "Giải pháp của công ty này giúp các doanh nghiệp mở rộng quy mô hoạt động như thế nào?"
+  },
+  {
+    "word": "INTELLIGENTROBOTS",
+    "clue": "Loại robot nào có khả năng tự học và cải thiện khả năng hoạt động?"
+  },
+  {
+    "word": "OPERATIONALEFFICIENCY",
+    "clue": "Mục tiêu của công ty trong việc phát triển giải pháp tự động hóa là nâng cao điều gì?"
+  },
+  {
+    "word": "SMARTAUTOMATION",
+    "clue": "Giải pháp tự động hóa thông minh có thể áp dụng trong ngành công nghiệp nào?"
+  },
+  {
+    "word": "STRATEGICPARTNERSHIP",
+    "clue": "Công ty này đã hợp tác với đối tác nào để phát triển giải pháp tự động hóa?"
+  },
+  {
+    "word": "WAREHOUSEOPTIMIZATION",
+    "clue": "Giải pháp tự động hóa giúp tối ưu hóa quy trình nào trong việc vận hành kho bãi?"
+  },
+  {
+    "word": "TECHNOLOGYINNOVATION",
+    "clue": "Công ty này đi đầu trong việc phát triển các sáng kiến công nghệ nào?"
+  },
+  {
+    "word": "ORDERPICKING",
+    "clue": "Công nghệ nào giúp việc chọn hàng trong kho trở nên nhanh chóng và chính xác?"
   }
 ]
