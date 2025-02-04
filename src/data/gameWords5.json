@@ -1,14 +1,226 @@
 [
   {
-    "word": "TECHPOWEREDELDERLYCAREDAO",
-    "clue": "TECD là viết tắt của từ gì."
+    "word": "NOODLE",
+    "clue": "Món ăn được kéo thành sợi."
   },
   {
-    "word": "SENIORS",
-    "clue": "Các Bác Cao niên tham gia TECD."
+    "word": "SUSHI",
+    "clue": "Món ăn Nhật Bản gồm cơm và cá sống."
   },
   {
-    "word": "SENIORBUDDY",
-    "clue": "Các bạn trẻ tham gia TECD."
+    "word": "PHO",
+    "clue": "Món nước nổi tiếng của Việt Nam."
+  },
+  {
+    "word": "RAMEN",
+    "clue": "Mì nước phổ biến ở Nhật Bản."
+  },
+  {
+    "word": "TACO",
+    "clue": "Món ăn Mexico với vỏ bánh ngô."
+  },
+  {
+    "word": "BURGER",
+    "clue": "Bánh kẹp với thịt bò và rau."
+  },
+  {
+    "word": "PIZZA",
+    "clue": "Món Ý với đế bánh, phô mai và sốt."
+  },
+  {
+    "word": "DIMSUM",
+    "clue": "Món hấp nhỏ thường có ở Trung Quốc."
+  },
+  {
+    "word": "STEAK",
+    "clue": "Thịt bò được nướng hoặc áp chảo."
+  },
+  {
+    "word": "CURRY",
+    "clue": "Món cay đặc trưng của Ấn Độ."
+  },
+  {
+    "word": "BIBIMBAP",
+    "clue": "Cơm trộn nổi tiếng của Hàn Quốc."
+  },
+  {
+    "word": "KIMCHI",
+    "clue": "Dưa muối cay của Hàn Quốc."
+  },
+  {
+    "word": "SASHIMI",
+    "clue": "Cá sống được thái lát mỏng."
+  },
+  {
+    "word": "PASTA",
+    "clue": "Mì ống phổ biến của Ý."
+  },
+  {
+    "word": "SATE",
+    "clue": "Món xiên nướng nổi tiếng Đông Nam Á."
+  },
+  {
+    "word": "TOMYUM",
+    "clue": "Súp chua cay nổi tiếng của Thái Lan."
+  },
+  {
+    "word": "MOCHI",
+    "clue": "Bánh gạo dẻo của Nhật Bản."
+  },
+  {
+    "word": "BUN",
+    "clue": "Bánh mì nhỏ mềm thường ăn sáng."
+  },
+  {
+    "word": "CHEESE",
+    "clue": "Sản phẩm từ sữa có vị béo."
+  },
+  {
+    "word": "BAGUETTE",
+    "clue": "Bánh mì dài của Pháp."
+  },
+  {
+    "word": "CHOCOLATE",
+    "clue": "Ngọt, làm từ cacao."
+  },
+  {
+    "word": "SPRINGROLL",
+    "clue": "Nem cuốn tươi hoặc chiên giòn."
+  },
+  {
+    "word": "TIRAMISU",
+    "clue": "Món tráng miệng Ý với cà phê."
+  },
+  {
+    "word": "MACARON",
+    "clue": "Bánh ngọt nhiều màu của Pháp."
+  },
+  {
+    "word": "WASABI",
+    "clue": "Gia vị cay xanh của Nhật Bản."
+  },
+  {
+    "word": "TEMPURA",
+    "clue": "Món chiên giòn Nhật Bản."
+  },
+  {
+    "word": "TOFU",
+    "clue": "Đậu hũ làm từ đậu nành."
+  },
+  {
+    "word": "BULGOGI",
+    "clue": "Thịt bò nướng kiểu Hàn Quốc."
+  },
+  {
+    "word": "PAELLA",
+    "clue": "Cơm trộn Tây Ban Nha với hải sản."
+  },
+  {
+    "word": "GYOZA",
+    "clue": "Bánh há cảo Nhật Bản."
+  },
+  {
+    "word": "TAPAS",
+    "clue": "Món ăn nhỏ của Tây Ban Nha."
+  },
+  {
+    "word": "GNOCCHI",
+    "clue": "Mì khoai tây của Ý."
+  },
+  {
+    "word": "CROISSANT",
+    "clue": "Bánh sừng bò nổi tiếng của Pháp."
+  },
+  {
+    "word": "PUDDING",
+    "clue": "Món tráng miệng mịn và ngọt."
+  },
+  {
+    "word": "FONDUE",
+    "clue": "Món nhúng với phô mai nóng."
+  },
+  {
+    "word": "ROTI",
+    "clue": "Bánh mì dẹt Ấn Độ."
+  },
+  {
+    "word": "BBQ",
+    "clue": "Thịt nướng trên lửa than."
+  },
+  {
+    "word": "GELATO",
+    "clue": "Kem Ý với vị ngọt đậm."
+  },
+  {
+    "word": "BIBINGKA",
+    "clue": "Bánh gạo nướng của Philippines."
+  },
+  {
+    "word": "LAKSA",
+    "clue": "Món mì cay của Malaysia."
+  },
+  {
+    "word": "OKONOMIYAKI",
+    "clue": "Bánh xèo Nhật Bản với bắp cải."
+  },
+  {
+    "word": "KEBAB",
+    "clue": "Thịt nướng kiểu Trung Đông."
+  },
+  {
+    "word": "MASALA",
+    "clue": "Gia vị hỗn hợp của Ấn Độ."
+  },
+  {
+    "word": "DOUGHNUT",
+    "clue": "Bánh rán vòng ngọt."
+  },
+  {
+    "word": "HUMMUS",
+    "clue": "Món bơ đậu gà Trung Đông."
+  },
+  {
+    "word": "RATATOUILLE",
+    "clue": "Món rau hầm của Pháp."
+  },
+  {
+    "word": "MISO",
+    "clue": "Tương đậu nành lên men của Nhật Bản."
+  },
+  {
+    "word": "BORSCHT",
+    "clue": "Súp củ dền nổi tiếng của Nga."
+  },
+  {
+    "word": "CASSOULET",
+    "clue": "Món hầm đậu trắng và thịt của Pháp."
+  },
+  {
+    "word": "PANEER",
+    "clue": "Phô mai tươi phổ biến ở Ấn Độ."
+  },
+  {
+    "word": "ESCARGOT",
+    "clue": "Ốc sên nướng bơ tỏi của Pháp."
+  },
+  {
+    "word": "JAMBALAYA",
+    "clue": "Món cơm trộn hải sản của Mỹ gốc Creole."
+  },
+  {
+    "word": "TAMAGO",
+    "clue": "Trứng cuộn ngọt kiểu Nhật Bản."
+  },
+  {
+    "word": "FALAFEL",
+    "clue": "Viên đậu gà chiên giòn của Trung Đông."
+  },
+  {
+    "word": "ADOBO",
+    "clue": "Món thịt hầm đặc trưng của Philippines."
+  },
+  {
+    "word": "GAZPACHO",
+    "clue": "Súp lạnh làm từ cà chua của Tây Ban Nha."
   }
 ]

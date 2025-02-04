@@ -5,6 +5,7 @@ import gameWords2 from "../data/gameWords2.json";
 import gameWords3 from "../data/gameWords3.json";
 import gameWords4 from "../data/gameWords4.json";
 import gameWords5 from "../data/gameWords5.json";
+import gameWords6 from "../data/gameWords6.json";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,7 +22,8 @@ const datasets = {
   "Công nghệ": gameWords2,
   "Giải trí": gameWords3,
   "Thể thao": gameWords4,
-  "Chương trình TECD": gameWords5,
+  "Ẩm thực": gameWords5,
+  "Chương trình TECD": gameWords6,
 };
 
 const prizes = [
