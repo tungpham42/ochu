@@ -283,6 +283,7 @@ const WordPuzzle = () => {
           ))}
         </Form.Select>
       </Form.Group>
+      <h3 className="text-center">Ô Chữ có {word.length} chữ cái</h3>
       {gameOver ? (
         <div className="text-center">
           <h3 className="text-center display-6">{getMaskedWord()}</h3>
