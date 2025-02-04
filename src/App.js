@@ -12,6 +12,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<WordPuzzle />} />
           <Route path="/kambria" element={<KambriaWordPuzzle />} />
+          <Route path="/lucky" element={<KambriaWordPuzzle />} />
+          <Route path="/mayman" element={<KambriaWordPuzzle />} />
+          <Route path="/custom" element={<KambriaWordPuzzle />} />
           <Route path="/quantri" element={<AdminPanel />} />
           <Route path="/admin" element={<AdminPanel />} />
         </Routes>
