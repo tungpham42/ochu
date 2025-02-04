@@ -24,7 +24,7 @@ const GuessLetterModal = ({
         resetForm();
       }
     } else {
-      setError("Vui lòng nhập một chữ cái hợp lệ.");
+      setError("Vui lòng nhập một ký tự hợp lệ.");
     }
   };
 
@@ -46,7 +46,7 @@ const GuessLetterModal = ({
   return (
     <Modal show={show} onHide={onClose} backdrop="static" centered>
       <Modal.Header>
-        <Modal.Title>Chữ cái {currentPlayerName} muốn đoán?</Modal.Title>
+        <Modal.Title>Ký tự {currentPlayerName} muốn đoán?</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form.Control
