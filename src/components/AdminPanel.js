@@ -154,6 +154,7 @@ const AdminPanel = () => {
                 value={validateWord(formData.word)}
                 onChange={handleChange}
                 required
+                autoFocus
               />
             </Form.Group>
             <Form.Group className="mb-3">
