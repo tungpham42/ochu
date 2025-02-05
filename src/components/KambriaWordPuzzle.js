@@ -63,7 +63,10 @@ const KambriaWordPuzzle = () => {
 
   const fetchWords = async () => {
     try {
-      const response = await axios.get(API_URL);
+      const response = await axios.get(API_URL, {
+        headers: { "Content-Type": "application/json" },
+        mode: "cors",
+      });
       const words = response.data;
       const wordIndex = Math.floor(Math.random() * words.length);
       setWord(words[wordIndex].word);
