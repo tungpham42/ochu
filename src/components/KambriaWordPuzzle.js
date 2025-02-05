@@ -259,7 +259,7 @@ const KambriaWordPuzzle = () => {
 
   return (
     <>
-      <h1 className="text-center mb-4">Ô Chữ Kambria</h1>
+      <h1 className="text-center mb-4">Ô Chữ May Mắn</h1>
       {/* Dataset Selection Dropdown */}
       <h3 className="text-center">Ô Chữ có {word.length} ký tự</h3>
       {gameOver ? (
