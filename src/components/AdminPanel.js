@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Table, Button, Modal, Form } from "react-bootstrap";
 
-const API_URL = "https://ochudb.netlify.app/api/words";
+const API_URL = "http://ochudb.cungrao.net:5000/api/words";
 
 const AdminPanel = () => {
   const [data, setData] = useState([]);

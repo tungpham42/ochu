@@ -27,7 +27,7 @@ const prizes = [
   { label: "Mất lượt", value: 0, color: "#C0C0C0" },
 ];
 
-const API_URL = "https://ochudb.netlify.app/api/words";
+const API_URL = "http://ochudb.cungrao.net:5000/api/words";
 
 const KambriaWordPuzzle = () => {
   const [wordData, setWordData] = useState([]);
