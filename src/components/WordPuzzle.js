@@ -312,7 +312,7 @@ const WordPuzzle = () => {
         <>
           <Row className="justify-content-center">
             <Col xs="auto">
-              <h5>Gợi ý: {clue}</h5>
+              <h5 class="text-center">Gợi ý: {clue}</h5>
               <h3 className="text-center display-6">{getMaskedWord()}</h3>
             </Col>
           </Row>
@@ -328,7 +328,7 @@ const WordPuzzle = () => {
           {players.length > 0 && (
             <div className="mt-3 text-center">
               <h4>Lượt chơi của {players[currentPlayerIndex]?.name}</h4>
-              <h5>
+              <h5 class="text-center">
                 Số điểm của {players[currentPlayerIndex]?.name}:{" "}
                 {players[currentPlayerIndex]?.score}
               </h5>
