@@ -27,7 +27,7 @@ const prizes = [
   { label: "Mất lượt", value: 0, color: "#C0C0C0" },
 ];
 
-const API_URL = "https://ochudb.cungrao.net/data.php";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const KambriaWordPuzzle = () => {
   const [wordData, setWordData] = useState([]);
