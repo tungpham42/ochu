@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      <Container className="my-5">
+      <Container className="mt-3">
         <Routes>
           <Route path="/" element={<KambriaWordPuzzle />} />
           <Route path="/lucky" element={<WordPuzzle />} />
