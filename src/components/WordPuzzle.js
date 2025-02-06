@@ -64,11 +64,11 @@ const WordPuzzle = () => {
   // Player management
   const [players, setPlayers] = useState([
     {
-      name: "Người chơi 1",
+      name: "Đội 1",
       score: 0,
     },
     {
-      name: "Người chơi 2",
+      name: "Đội 2",
       score: 0,
     },
   ]);
@@ -129,7 +129,7 @@ const WordPuzzle = () => {
       setShowModal(false);
     } else {
       setLetterToGuess(result.value);
-      setMessage(`${currentPlayer.name} quay được ${result.label} điểm!`);
+      setMessage(`${currentPlayer.name} được ${result.label} điểm!`);
       setHasScore(true);
       setShowModal(true);
     }
