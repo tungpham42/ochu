@@ -51,6 +51,7 @@ const GuessLetterModal = ({
       <Modal.Body>
         <Form.Control
           type="text"
+          size="lg"
           value={letter.toUpperCase()}
           onChange={(e) => setLetter(e.target.value)}
           onKeyDown={handleKeyDown}
