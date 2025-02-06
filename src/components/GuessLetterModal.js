@@ -57,7 +57,7 @@ const GuessLetterModal = ({
           maxLength="1"
           autoFocus
         />
-        {message && <p className="mt-2">{message}</p>}
+        {message && <p className="mt-2 h5">{message}</p>}
         {error && <p className="text-danger mt-2">{error}</p>}
       </Modal.Body>
       <Modal.Footer>
