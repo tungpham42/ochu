@@ -266,7 +266,7 @@ const WordPuzzle = () => {
 
   return (
     <>
-      <h1 className="text-center mb-4">Ô Chữ</h1>
+      <h1 className="text-center mb-4">Ô Chữ theo Chủ đề</h1>
       {/* Dataset Selection Dropdown */}
       <Form.Group
         controlId="datasetSelect"
