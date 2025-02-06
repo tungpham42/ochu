@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import useSound from "use-sound";
+import buzzSound from "../sounds/buzz.mp3";
 
 const GuessLetterModal = ({
   show,
@@ -14,16 +16,19 @@ const GuessLetterModal = ({
 }) => {
   const [letter, setLetter] = useState("");
   const [error, setError] = useState("");
+  const [playBuzz] = useSound(buzzSound);
 
   const handleSubmit = () => {
     if (letter && letter.length === 1) {
       if (guessedLetters.includes(letter.toUpperCase())) {
+        playBuzz();
         setError('Đã đoán chữ "' + letter.toUpperCase() + '" rồi.');
       } else {
         onSubmit(letter.toUpperCase(), letterToGuess);
         resetForm();
       }
     } else {
+      playBuzz();
       setError("Vui lòng nhập một ký tự hợp lệ.");
     }
   };

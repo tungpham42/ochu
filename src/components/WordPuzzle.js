@@ -20,6 +20,12 @@ import {
   faAdd,
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import useSound from "use-sound";
+import correctSound from "../sounds/correct.mp3";
+import wrongSound from "../sounds/wrong.mp3";
+import startSound from "../sounds/start.mp3";
+import winSound from "../sounds/win.mp3";
+import buzzSound from "../sounds/buzz.mp3";
 
 const datasets = {
   "Việt Nam": gameWords1,
@@ -78,6 +84,12 @@ const WordPuzzle = () => {
   const [newPlayerName, setNewPlayerName] = useState("");
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
 
+  const [playCorrect] = useSound(correctSound);
+  const [playWrong] = useSound(wrongSound);
+  const [playStart] = useSound(startSound);
+  const [playWin] = useSound(winSound);
+  const [playBuzz] = useSound(buzzSound);
+
   const getMaskedWord = () => {
     return word
       .split("")
@@ -98,6 +110,7 @@ const WordPuzzle = () => {
     if (!getMaskedWord().includes("_")) {
       setGameOver(true);
       setMessage("Chúc mừng! Từ đã được đoán xong!");
+      playWin();
     } // eslint-disable-next-line
   }, [guessedLetters]);
 
@@ -122,16 +135,19 @@ const WordPuzzle = () => {
       setMessage(`${currentPlayer.name} mất điểm!`);
       setHasScore(false);
       setShowModal(true);
+      playBuzz();
     } else if (result.label === "Mất lượt") {
       setMessage(`${currentPlayer.name} mất lượt!`);
       nextPlayer();
       setHasScore(false);
       setShowModal(false);
+      playBuzz();
     } else {
       setLetterToGuess(result.value);
       setMessage(`${currentPlayer.name} được ${result.label} điểm!`);
       setHasScore(true);
       setShowModal(true);
+      playStart();
     }
   };
 
@@ -165,7 +181,10 @@ const WordPuzzle = () => {
           : `${currentPlayer.name} đoán sai. Đổi lượt!`
       );
 
-      if (!isCorrectGuess) {
+      if (isCorrectGuess) {
+        playCorrect();
+      } else {
+        playWrong();
         nextPlayer();
       }
     } else {
@@ -300,7 +319,9 @@ const WordPuzzle = () => {
       <h3 className="text-center">Ô Chữ có {word.length} ký tự</h3>
       {gameOver ? (
         <div className="text-center">
-          <h3 className="masked-word text-center display-6">{getMaskedWord()}</h3>
+          <h3 className="masked-word text-center display-6">
+            {getMaskedWord()}
+          </h3>
           <h4>
             Trò chơi kết thúc!{" "}
             {players.length > 0 && (
@@ -325,7 +346,9 @@ const WordPuzzle = () => {
           <Row className="justify-content-center">
             <Col xs="auto">
               <h5 class="text-center">Gợi ý: {clue}</h5>
-              <h3 className="masked-word text-center display-6">{getMaskedWord()}</h3>
+              <h3 className="masked-word text-center display-6">
+                {getMaskedWord()}
+              </h3>
             </Col>
           </Row>
 
