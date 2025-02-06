@@ -300,7 +300,7 @@ const WordPuzzle = () => {
       <h3 className="text-center">Ô Chữ có {word.length} ký tự</h3>
       {gameOver ? (
         <div className="text-center">
-          <h3 className="text-center display-6">{getMaskedWord()}</h3>
+          <h3 className="masked-word text-center display-6">{getMaskedWord()}</h3>
           <h4>
             Trò chơi kết thúc!{" "}
             {players.length > 0 && (
@@ -325,7 +325,7 @@ const WordPuzzle = () => {
           <Row className="justify-content-center">
             <Col xs="auto">
               <h5 class="text-center">Gợi ý: {clue}</h5>
-              <h3 className="text-center display-6">{getMaskedWord()}</h3>
+              <h3 className="masked-word text-center display-6">{getMaskedWord()}</h3>
             </Col>
           </Row>
 

@@ -55,6 +55,7 @@ const GuessLetterModal = ({
           onChange={(e) => setLetter(e.target.value)}
           onKeyDown={handleKeyDown}
           maxLength="1"
+          className="masked-word"
           autoFocus
         />
         {message && <p className="mt-2 h5">{message}</p>}

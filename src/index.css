@@ -13,3 +13,6 @@ code {
 .list-group-item {
   border: none !important;
 }
+.masked-word {
+  font-family: "Roboto Mono", monospace !important;
+}
