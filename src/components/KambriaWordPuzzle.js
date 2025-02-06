@@ -3,6 +3,7 @@ import axios from "axios";
 import { Button, Row, Col, Form, ListGroup } from "react-bootstrap";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
+import RulesModal from "./RulesModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEdit,
@@ -10,6 +11,7 @@ import {
   faRedo,
   faPlay,
   faAdd,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 const prizes = [
@@ -53,6 +55,7 @@ const KambriaWordPuzzle = () => {
     },
   ]);
   const [showEditModal, setShowEditModal] = useState(false);
+  const [showRulesModal, setShowRulesModal] = useState(false);
   const [selectedPlayerIndex, setSelectedPlayerIndex] = useState(null);
   const [newPlayerName, setNewPlayerName] = useState("");
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
@@ -260,6 +263,15 @@ const KambriaWordPuzzle = () => {
   return (
     <>
       <h1 className="text-center mb-4">Ô Chữ May Mắn</h1>
+      <Button
+        className="position-absolute"
+        style={{ top: "25px", right: "25px" }}
+        size="lg"
+        variant="info"
+        onClick={() => setShowRulesModal(true)}
+      >
+        <FontAwesomeIcon icon={faInfoCircle} />
+      </Button>
       {/* Dataset Selection Dropdown */}
       <h3 className="text-center">Ô Chữ có {word.length} ký tự</h3>
       {gameOver ? (
@@ -391,6 +403,11 @@ const KambriaWordPuzzle = () => {
           setShowEditModal(false);
         }}
         players={players}
+      />
+      <RulesModal
+        show={showRulesModal}
+        onClose={() => setShowRulesModal(false)}
+        handleClose={() => setShowRulesModal(false)}
       />
     </>
   );

@@ -10,6 +10,7 @@ import gameWords7 from "../data/gameWords7.json";
 import gameWords8 from "../data/gameWords8.json";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
+import RulesModal from "./RulesModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEdit,
@@ -17,6 +18,7 @@ import {
   faRedo,
   faPlay,
   faAdd,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 const datasets = {
@@ -71,6 +73,7 @@ const WordPuzzle = () => {
     },
   ]);
   const [showEditModal, setShowEditModal] = useState(false);
+  const [showRulesModal, setShowRulesModal] = useState(false);
   const [selectedPlayerIndex, setSelectedPlayerIndex] = useState(null);
   const [newPlayerName, setNewPlayerName] = useState("");
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
@@ -267,6 +270,15 @@ const WordPuzzle = () => {
   return (
     <>
       <h1 className="text-center mb-4">Ô Chữ theo Chủ đề</h1>
+      <Button
+        className="position-absolute"
+        style={{ top: "25px", right: "25px" }}
+        size="lg"
+        variant="info"
+        onClick={() => setShowRulesModal(true)}
+      >
+        <FontAwesomeIcon icon={faInfoCircle} />
+      </Button>
       {/* Dataset Selection Dropdown */}
       <Form.Group
         controlId="datasetSelect"
@@ -415,6 +427,11 @@ const WordPuzzle = () => {
           setShowEditModal(false);
         }}
         players={players}
+      />
+      <RulesModal
+        show={showRulesModal}
+        onClose={() => setShowRulesModal(false)}
+        handleClose={() => setShowRulesModal(false)}
       />
     </>
   );
