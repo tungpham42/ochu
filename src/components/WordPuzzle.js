@@ -27,6 +27,7 @@ import wrongSound from "../sounds/wrong.mp3";
 import startSound from "../sounds/start.mp3";
 import winSound from "../sounds/win.mp3";
 import buzzSound from "../sounds/buzz.mp3";
+import zeroSound from "../sounds/zero.mp3";
 
 const datasets = {
   "Việt Nam": gameWords1,
@@ -90,6 +91,7 @@ const WordPuzzle = () => {
   const [playStart] = useSound(startSound);
   const [playWin] = useSound(winSound);
   const [playBuzz] = useSound(buzzSound);
+  const [playZero] = useSound(zeroSound);
 
   const getMaskedWord = () => {
     return word
@@ -136,7 +138,7 @@ const WordPuzzle = () => {
       setMessage(`${currentPlayer.name} mất điểm!`);
       setHasScore(false);
       setShowModal(true);
-      playBuzz();
+      playZero();
     } else if (result.label === "Mất lượt") {
       setMessage(`${currentPlayer.name} mất lượt!`);
       nextPlayer();

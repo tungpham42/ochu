@@ -20,6 +20,7 @@ import wrongSound from "../sounds/wrong.mp3";
 import startSound from "../sounds/start.mp3";
 import winSound from "../sounds/win.mp3";
 import buzzSound from "../sounds/buzz.mp3";
+import zeroSound from "../sounds/zero.mp3";
 
 const prizes = [
   { label: "100", value: 100, color: "#FF5733" },
@@ -72,6 +73,7 @@ const KambriaWordPuzzle = () => {
   const [playStart] = useSound(startSound);
   const [playWin] = useSound(winSound);
   const [playBuzz] = useSound(buzzSound);
+  const [playZero] = useSound(zeroSound);
 
   useEffect(() => {
     fetchWords(); // eslint-disable-next-line
@@ -126,7 +128,7 @@ const KambriaWordPuzzle = () => {
       setMessage(`${currentPlayer.name} mất điểm!`);
       setHasScore(false);
       setShowModal(true);
-      playBuzz();
+      playZero();
     } else if (result.label === "Mất lượt") {
       setMessage(`${currentPlayer.name} mất lượt!`);
       nextPlayer();
