@@ -12,6 +12,7 @@ import {
   faPlay,
   faAdd,
   faInfoCircle,
+  faGamepad,
 } from "@fortawesome/free-solid-svg-icons";
 import useSound from "use-sound";
 import correctSound from "../sounds/correct.mp3";
@@ -199,9 +200,17 @@ const KambriaWordPuzzle = () => {
       setError("Không có ô chữ!");
       return;
     }
-    const randomIndex = Math.floor(Math.random() * wordData.length);
-    setWord(wordData[randomIndex].word);
-    setClue(wordData[randomIndex].clue);
+    if (wordData.length === 0) {
+      setError("Không có ô chữ!");
+      return;
+    }
+    let newIndex;
+    do {
+      newIndex = Math.floor(Math.random() * wordData.length);
+    } while (wordData[newIndex].word === word); // Avoid duplicate word
+
+    setWord(wordData[newIndex].word);
+    setClue(wordData[newIndex].clue);
     setGuessedLetters([]);
     setGameOver(false);
     setMessage("");
@@ -330,9 +339,12 @@ const KambriaWordPuzzle = () => {
 
           <Row className="justify-content-center mt-3">
             <Col xs="auto">
-              <Button size="lg" onClick={startGame}>
+              <Button size="lg" onClick={startGame} className="me-2">
                 <FontAwesomeIcon icon={faPlay} className="me-2" />
                 Bắt đầu
+              </Button>
+              <Button size="lg" variant="light" onClick={restartGame}>
+                <FontAwesomeIcon icon={faGamepad} className="me-2" /> Ván mới
               </Button>
             </Col>
           </Row>
