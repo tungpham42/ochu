@@ -310,17 +310,18 @@ const KambriaWordPuzzle = () => {
             {getMaskedWord()}
           </h3>
           <h4>
-            Trò chơi kết thúc!{" "}
+            Trò chơi kết thúc
             {players.length > 0 && (
               <>
-                Người chiến thắng là{" "}
+                ,{" "}
                 {
                   players.reduce(
                     (prev, current) =>
                       prev.score > current.score ? prev : current,
                     players[0]
                   )?.name
-                }
+                }{" "}
+                giành chiến thắng!
               </>
             )}
           </h4>
