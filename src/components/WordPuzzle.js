@@ -362,7 +362,7 @@ const WordPuzzle = () => {
 
           <Row className="justify-content-center mt-3">
             <Col xs="auto">
-              <Button size="lg" onClick={startGame}>
+              <Button size="lg" onClick={startGame} className="me-2">
                 <FontAwesomeIcon icon={faPlay} className="me-2" />
                 Bắt đầu
               </Button>
