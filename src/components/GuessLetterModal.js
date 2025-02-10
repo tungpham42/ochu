@@ -33,6 +33,14 @@ const GuessLetterModal = ({
     }
   };
 
+  const validateLetter = (letter) => {
+    return letter
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+      .replace(/\s+/g, "") // Remove spaces
+      .toUpperCase();
+  };
+
   const resetForm = () => {
     setLetter("");
     setError("");
@@ -57,7 +65,7 @@ const GuessLetterModal = ({
         <Form.Control
           type="text"
           size="lg"
-          value={letter.toUpperCase()}
+          value={validateLetter(letter)}
           onChange={(e) => setLetter(e.target.value)}
           onKeyDown={handleKeyDown}
           maxLength="1"
