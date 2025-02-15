@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { db } from "./firebaseConfig"; // Import Firebase config
+import { collection, getDocs } from "firebase/firestore";
 import { Button, Row, Col, Form, ListGroup } from "react-bootstrap";
 import GuessLetterModal from "./GuessLetterModal";
 import EditPlayerNameModal from "./EditPlayerNameModal";
@@ -36,8 +37,6 @@ const prizes = [
   { label: "Mất điểm", value: 0, color: "#808080" },
   { label: "Mất lượt", value: 0, color: "#C0C0C0" },
 ];
-
-const API_URL = process.env.REACT_APP_API_URL;
 
 const KambriaWordPuzzle = () => {
   const [wordData, setWordData] = useState([]);
@@ -76,16 +75,13 @@ const KambriaWordPuzzle = () => {
   const [playZero] = useSound(zeroSound);
 
   useEffect(() => {
-    fetchWords(); // eslint-disable-next-line
+    fetchWords();
   }, []);
 
   const fetchWords = async () => {
     try {
-      const response = await axios.get(API_URL, {
-        headers: { "Content-Type": "application/json" },
-        mode: "cors",
-      });
-      const words = response.data;
+      const wordsCollection = await getDocs(collection(db, "words"));
+      const words = wordsCollection.docs.map((doc) => doc.data());
       const wordIndex = Math.floor(Math.random() * words.length);
       setWord(words[wordIndex].word);
       setClue(words[wordIndex].clue);
@@ -93,7 +89,7 @@ const KambriaWordPuzzle = () => {
       setGameOver(false);
       setMessage("");
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching data from Firebase:", error);
     }
   };
 

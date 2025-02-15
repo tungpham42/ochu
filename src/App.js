@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/mayman" element={<WordPuzzle />} />
           <Route path="/chude" element={<WordPuzzle />} />
           <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/quantri" element={<AdminPanel />} />
         </Routes>
       </Container>
     </Router>

@@ -58,11 +58,17 @@ const AdminPanel = () => {
     }
 
     try {
+      const modifiedWord =
+        formData.word.slice(0, -1) + formData.word.slice(-1).toUpperCase();
+
       if (editing) {
         const docRef = doc(db, "words", currentId);
-        await updateDoc(docRef, { word: formData.word, clue: formData.clue });
+        await updateDoc(docRef, { word: modifiedWord, clue: formData.clue });
       } else {
-        await addDoc(collection(db, "words"), formData);
+        await addDoc(collection(db, "words"), {
+          word: modifiedWord,
+          clue: formData.clue,
+        });
       }
       fetchWords();
       handleClose();
