@@ -98,16 +98,16 @@ const AdminPanel = () => {
 
   return (
     <Container className="mt-4">
-      <h2>Admin Panel - Firebase CRUD</h2>
+      <h2>Quản trò Ô Chữ</h2>
       <Button variant="primary" onClick={handleShow} className="mb-3">
-        Add New
+        Thêm từ mới
       </Button>
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>Word</th>
-            <th>Clue</th>
-            <th>Actions</th>
+            <th>Từ</th>
+            <th>Gợi ý</th>
+            <th>Hành động</th>
           </tr>
         </thead>
         <tbody>
@@ -121,14 +121,14 @@ const AdminPanel = () => {
                   size="sm"
                   onClick={() => handleEdit(item)}
                 >
-                  Edit
+                  Sửa
                 </Button>{" "}
                 <Button
                   variant="danger"
                   size="sm"
                   onClick={() => handleDelete(item.id)}
                 >
-                  Delete
+                  Xóa
                 </Button>
               </td>
             </tr>
@@ -143,7 +143,7 @@ const AdminPanel = () => {
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3">
-              <Form.Label>Word</Form.Label>
+              <Form.Label>Từ</Form.Label>
               <Form.Control
                 type="text"
                 name="word"
@@ -154,7 +154,7 @@ const AdminPanel = () => {
               />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Clue</Form.Label>
+              <Form.Label>Gợi ý</Form.Label>
               <Form.Control
                 type="text"
                 name="clue"
@@ -167,10 +167,10 @@ const AdminPanel = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Đóng
           </Button>
           <Button variant="primary" onClick={handleSubmit}>
-            {editing ? "Update" : "Save"}
+            {editing ? "Cập nhật" : "Lưu"}
           </Button>
         </Modal.Footer>
       </Modal>
