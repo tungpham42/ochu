@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import WordPuzzle from "./components/WordPuzzle";
 import KambriaWordPuzzle from "./components/KambriaWordPuzzle";
+import AdminPanel from "./components/AdminPanel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/lucky" element={<WordPuzzle />} />
           <Route path="/mayman" element={<WordPuzzle />} />
           <Route path="/chude" element={<WordPuzzle />} />
+          <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </Container>
     </Router>

@@ -1,108 +1,98 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Container, Table, Button, Modal, Form } from "react-bootstrap";
-
-const API_URL = "http://ochudb.cungrao.net:5000/api/words";
+import { db } from "./firebaseConfig"; // Import Firebase
+import {
+  collection,
+  addDoc,
+  getDocs,
+  updateDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
 const AdminPanel = () => {
   const [data, setData] = useState([]);
   const [show, setShow] = useState(false);
-  const [formData, setFormData] = useState({ word: "", clue: "", id: "" });
+  const [formData, setFormData] = useState({ word: "", clue: "" });
   const [editing, setEditing] = useState(false);
-  const [error, setError] = useState(""); // To display the error message
+  const [error, setError] = useState("");
+  const [currentId, setCurrentId] = useState("");
 
-  useEffect(() => {
-    fetchWords();
-  }, []);
-
-  const fetchWords = async () => {
-    try {
-      const response = await axios.get(API_URL);
-      setData(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => {
-    setEditing(false);
-    setFormData({ word: "", clue: "", id: "" });
-    setError(""); // Reset error message
-    setShow(true);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setError(""); // Clear error when editing the word
-  };
-
-  const handleSubmit = async () => {
-    const validatedWord = validateWord(formData.word);
-
-    // Check if the word already exists in the database, ignoring the current ID during edit
-    const wordExists = data.some(
-      (item) =>
-        validateWord(item.word) === validatedWord && item.id !== formData.id
-    );
-
-    if (wordExists) {
-      setError("This word already exists. Please enter a different word.");
-      return;
-    }
-
-    try {
-      if (editing) {
-        await axios.put(`${API_URL}/${formData.id}`, {
-          ...formData,
-          word: validatedWord,
-        });
-        setData((prevData) =>
-          prevData.map((item) =>
-            item.id === formData.id
-              ? { ...formData, word: validatedWord }
-              : item
-          )
-        );
-      } else {
-        const response = await axios.post(API_URL, {
-          ...formData,
-          word: validatedWord,
-        });
-        setData((prevData) => [...prevData, response.data]);
-      }
-      handleClose();
-    } catch (error) {
-      console.error("Error saving data:", error);
-    }
-  };
-
-  const handleEdit = (item) => {
-    setEditing(true);
-    setFormData(item);
-    setShow(true);
-  };
-
-  const handleDelete = async (id) => {
-    try {
-      await axios.delete(`${API_URL}/${id}`);
-      setData((prevData) => prevData.filter((item) => item.id !== id));
-    } catch (error) {
-      console.error("Error deleting data:", error);
-    }
-  };
-
-  const validateWord = (word) => {
-    return word
+  const validateLetter = (letter) => {
+    return letter
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
       .replace(/\s+/g, "") // Remove spaces
       .toUpperCase();
   };
 
+  useEffect(() => {
+    fetchWords();
+  }, []);
+
+  const fetchWords = async () => {
+    const querySnapshot = await getDocs(collection(db, "words"));
+    const wordsList = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setData(wordsList);
+  };
+
+  const handleShow = () => {
+    setEditing(false);
+    setFormData({ word: "", clue: "" });
+    setError("");
+    setShow(true);
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setError("");
+  };
+
+  const handleSubmit = async () => {
+    if (!formData.word.trim() || !formData.clue.trim()) {
+      setError("Both fields are required.");
+      return;
+    }
+
+    try {
+      if (editing) {
+        const docRef = doc(db, "words", currentId);
+        await updateDoc(docRef, { word: formData.word, clue: formData.clue });
+      } else {
+        await addDoc(collection(db, "words"), formData);
+      }
+      fetchWords();
+      handleClose();
+    } catch (error) {
+      console.error("Error saving data:", error);
+      setError("Failed to save data. Try again.");
+    }
+  };
+
+  const handleEdit = (item) => {
+    setEditing(true);
+    setCurrentId(item.id);
+    setFormData({ word: item.word, clue: item.clue });
+    setShow(true);
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await deleteDoc(doc(db, "words", id));
+      fetchWords();
+    } catch (error) {
+      console.error("Error deleting data:", error);
+    }
+  };
+
+  const handleClose = () => setShow(false);
+
   return (
     <Container className="mt-4">
-      <h2>Admin Panel - Ô Chữ Game Show</h2>
+      <h2>Admin Panel - Firebase CRUD</h2>
       <Button variant="primary" onClick={handleShow} className="mb-3">
         Add New
       </Button>
@@ -139,7 +129,7 @@ const AdminPanel = () => {
           ))}
         </tbody>
       </Table>
-
+      {error && <p className="text-danger">{error}</p>}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{editing ? "Edit Entry" : "Add Entry"}</Modal.Title>
@@ -151,7 +141,7 @@ const AdminPanel = () => {
               <Form.Control
                 type="text"
                 name="word"
-                value={validateWord(formData.word)}
+                value={validateLetter(formData.word)}
                 onChange={handleChange}
                 required
                 autoFocus
@@ -167,18 +157,13 @@ const AdminPanel = () => {
                 required
               />
             </Form.Group>
-            {error && <p className="text-danger">{error}</p>}
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button
-            variant="primary"
-            onClick={handleSubmit}
-            disabled={error !== ""}
-          >
+          <Button variant="primary" onClick={handleSubmit}>
             {editing ? "Update" : "Save"}
           </Button>
         </Modal.Footer>
