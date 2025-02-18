@@ -367,7 +367,7 @@ const WordPuzzle = () => {
             <Col xs="auto">
               <Button size="lg" onClick={startGame} className="me-2">
                 <FontAwesomeIcon icon={faPlay} className="me-2" />
-                Bắt đầu
+                Chơi
               </Button>
               <Button size="lg" variant="light" onClick={restartGame}>
                 <FontAwesomeIcon icon={faGamepad} className="me-2" /> Ván mới
