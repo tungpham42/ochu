@@ -138,7 +138,7 @@ const AdminPanel = () => {
       {error && <p className="text-danger">{error}</p>}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{editing ? "Edit Entry" : "Add Entry"}</Modal.Title>
+          <Modal.Title>{editing ? "Sửa từ" : "Thêm từ"}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
