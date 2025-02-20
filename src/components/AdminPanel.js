@@ -53,14 +53,25 @@ const AdminPanel = () => {
 
   const handleSubmit = async () => {
     if (!formData.word.trim() || !formData.clue.trim()) {
-      setError("Both fields are required.");
+      setError("Hai trường bắt buộc.");
+      return;
+    }
+
+    const modifiedWord =
+      formData.word.slice(0, -1) + formData.word.slice(-1).toUpperCase();
+
+    // Check for duplicate words (ignoring case and accents)
+    const normalizedWord = validateLetter(modifiedWord);
+    const isDuplicate = data.some(
+      (item) => validateLetter(item.word) === normalizedWord
+    );
+
+    if (isDuplicate) {
+      setError("Từ đã tồn tại trong danh sách.");
       return;
     }
 
     try {
-      const modifiedWord =
-        formData.word.slice(0, -1) + formData.word.slice(-1).toUpperCase();
-
       if (editing) {
         const docRef = doc(db, "words", currentId);
         await updateDoc(docRef, { word: modifiedWord, clue: formData.clue });
@@ -74,7 +85,7 @@ const AdminPanel = () => {
       handleClose();
     } catch (error) {
       console.error("Error saving data:", error);
-      setError("Failed to save data. Try again.");
+      setError("Không lưu được. Vui lòng thử lại.");
     }
   };
 
@@ -164,6 +175,7 @@ const AdminPanel = () => {
               />
             </Form.Group>
           </Form>
+          {error && <p className="text-danger">{error}</p>}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
