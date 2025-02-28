@@ -198,8 +198,20 @@ const KambriaWordPuzzle = () => {
       setError("Không có ô chữ!");
       return;
     }
-    if (wordData.length === 0) {
-      setError("Không có ô chữ!");
+    if (wordData.length === 1) {
+      setGuessedLetters([]);
+      setGameOver(false);
+      setMessage("");
+      setPlayers([
+        {
+          name: "Đội 1",
+          score: 0,
+        },
+        {
+          name: "Đội 2",
+          score: 0,
+        },
+      ]);
       return;
     }
     let newIndex;
@@ -343,7 +355,11 @@ const KambriaWordPuzzle = () => {
                 Chơi
               </Button>
               <Button size="lg" variant="light" onClick={restartGame}>
-                <FontAwesomeIcon icon={faGamepad} className="me-2" /> Ván mới
+                <FontAwesomeIcon
+                  icon={wordData.length === 1 ? faRedo : faGamepad}
+                  className="me-2"
+                />
+                {wordData.length === 1 ? "Chơi lại" : "Ván mới"}
               </Button>
             </Col>
           </Row>
