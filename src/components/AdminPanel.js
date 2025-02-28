@@ -62,11 +62,11 @@ const AdminPanel = () => {
 
     // Check for duplicate words (ignoring case and accents)
     const normalizedWord = validateLetter(modifiedWord);
-    const isDuplicate = data.some(
+    const existingEntry = data.find(
       (item) => validateLetter(item.word) === normalizedWord
     );
 
-    if (isDuplicate) {
+    if (!editing && existingEntry) {
       setError("Từ đã tồn tại trong danh sách.");
       return;
     }
@@ -74,7 +74,7 @@ const AdminPanel = () => {
     try {
       if (editing) {
         const docRef = doc(db, "words", currentId);
-        await updateDoc(docRef, { word: modifiedWord, clue: formData.clue });
+        await updateDoc(docRef, { clue: formData.clue }); // Allow clue update only
       } else {
         await addDoc(collection(db, "words"), {
           word: modifiedWord,
