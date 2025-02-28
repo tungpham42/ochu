@@ -199,9 +199,11 @@ const KambriaWordPuzzle = () => {
       return;
     }
     if (wordData.length === 1) {
+      setCurrentPlayerIndex(0);
       setGuessedLetters([]);
       setGameOver(false);
       setMessage("");
+      setError("");
       setPlayers([
         {
           name: "Đội 1",
