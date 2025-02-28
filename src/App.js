@@ -4,6 +4,7 @@ import WordPuzzle from "./components/WordPuzzle";
 import KambriaWordPuzzle from "./components/KambriaWordPuzzle";
 import AdminPanel from "./components/AdminPanel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/quantri" element={<AdminPanel />} />
           <Route path="/quantro" element={<AdminPanel />} />
         </Routes>
+        <Footer />
       </Container>
     </Router>
   );
